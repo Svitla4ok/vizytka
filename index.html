@@ -1,34 +1,195 @@
 <!DOCTYPE html>
 <html> 
 	<head>
-		<title> Ñâ³òëÿ÷îê </title> 
+		<meta charset="UTF-8">
+		<title> Світлячок</title> 
 		<style>
-			.page {
+			.body 
+			{
+				margin:0;
+			}
+			.full-screen 
+			{
 				height: 100%;
 				width: 100%;
 			}
+			.sub-li 
+			{
+				font-family:Futura;
+				font-weight: normal;
+				
+			}
+			.main_text 
+			{
+				position: fixed;
+				top: 10px;
+				left: 20px;
+				color: white;
+				width: 300px;
+				font-size: 24px;
+				font-weight: bold;
+				font-style: italic;	
+			}
+			.style_for_favourite_quote
+			{
+				margin-top: 260px;
+				width: 550px;
+			}
+			.poem
+			{
+				margin-left: 160px;
+				width: 300px;
+			}
+			.visible 
+			{
+				visibility: visible;
+			}
+			.not_visible 	
+			{
+				display: none;
+			}
+			.list_for_links
+			{
+				list-style-type:none;
+			}
+			.main_div_for_links
+			{
+				position: fixed;
+				top: 0px;
+			}
+			.sub_div_for_links
+			{
+				position: relative;
+				margin-left: auto;
+				margin-right: auto;
+				width: 580px;
+				top: 50%;
+				font-size: 30px;
+				background: white;
+				border-radius: 20px;
+			}
+			.middle_line_change
+			{
+				margin-top:-90px;
+			}
+			.navigation
+			{
+				position: fixed;
+				top:50%;
+				width:100%;
+			}
+			.icon
+			{
+				width:180px;
+				height:180px;
+			}
+			.back
+			{
+				position:absolute;
+				left:0;
+				background-size: 100%;
+				background-image: url('arrows/arrow_back.png');
+				background-repeat: no-repeat;
+			}
+			.forward
+			{
+				position:absolute;
+				right:0;
+				background-size: 100%;
+				background-image: url('arrows/arrow_forward.png');
+				background-repeat: no-repeat;				
+			}
 		</style>
 	</head>
-	<body class="">
-	<div class="page"> 
-		<img src="images/first.jpg" alt="Smiley face" height="100%" width="100%">
-		<p> Світка - поетка, блогерка, фанатка кіно.</p>
-			
-			<ul>
-			<li><p style="color:white"> Зацікавлення </p>
-				<ul>
-					<li style="font-family:Futura"> Мандри </li>
-					<li style="font-family:Futura"> Цікаві люди </li>
-					<li style="font-family:Futura"> Тексти, символи і букви </li>
-				</ul>
-            </li>
-			<li><p style="color:white" Улюблена цитата </p>
-				<ul>
-					<li style="font-family: Futura"> Do what you can with what you have where you are </li>
-				</ul>
-            </li>
-		</ul>
-		<img src="
-	</div>
+	<body class="body">
+		<div>
+			<div id="page-0" class="visible"> 
+				<img class="full-screen" src="images/first.jpg" alt="Smiley face" />
+				<div class="main_text"> 
+					<p> Світка - поетка, блогерка, фанатка кіно.</p>			
+					<ul>
+						<li> <p>Зацікавлення </p>
+							<ul>
+								<li class="sub-li"> Мандри </li>
+								<li class="sub-li"> Цікаві люди </li>
+								<li class="sub-li"> Тексти, символи і букви </li>
+							</ul>
+						</li>
+						<li class= "style_for_favourite_quote">
+							<p>  Улюблена цитата </p>
+							<ul>
+								<li class="sub-li"> Do what you can with what you have where you <br /> are </li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="page-1" class="not_visible"> 
+				<img class="full-screen" src="images/second.jpg" alt="rain"/>
+				<div class="main_text"> 
+					<p class= "poem">
+						Знаєш, зірки не зникають зі своїх місць, не чекають, <br/>
+						не вірять - горять. <br/>
+						вони досі і там, де ми їх залишили. <br/>
+						наші очі того ж кольору, хіба трохи сумніші.<br/>
+						наші руки, звиклі до обіймів, стали грубішими.<br/>
+						знаєш, та наша річка і досі так само зветься,<br/>
+						може, стала трошечки ширша або навпаки.<br/>
+						наші вулиці там і залишилися, де <br/>
+						ми їх покинули,<br/>
+						хіба асфальт сильніше потріскався.<br/>
+						наше місто вночі таке ж,<br/>
+						як і було для нас,<br/>
+						тільки тепер тут інші.<br/>
+						наш день, наша ніч, <br/>
+						все відійшло зі словом наше.<br/>
+						знаєш, якби не приходив час прощатися,<br/>
+						люди  залишалися б разом вічно...<br/>
+					</p>
+				</div>
+			</div>
+			<div id="page-2" class="not_visible"> 
+			<img class="full-screen" src="images/third.jpg" alt="road"/>
+			<div class="main_div_for_links full-screen"> 
+				<div class= "sub_div_for_links middle_line_change">
+					<ul class="list_for_links">
+						<li> 
+							<a  href= "http://svitla4ok.livejournal.com" >  
+								Мій блог  у "Livejournal"
+							</a> 
+						</li>
+						<li>
+							<a href= "http://87.te.ua/?p=243" > 
+								Мій профіль в "Літературній студії 87"
+							</a>
+						</li>
+						<li>	
+							<a href= "https://www.facebook.com/svitlana.andriishyna">
+								Моя сторінка у "Facebook"
+							</a>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="navigation middle_line_change">
+			<div class="icon back"  onclick="goBack()"></div>
+			<div class="icon forward"  onclick="goForward()"></div>
+		</div>
+		<script>
+		var currentPage = 0;
+		var pagesCount = 3;
+		var goBack = function(){
+			document.getElementById('page-'+currentPage).className = 'not_visible';
+			currentPage = (3+currentPage-1)%pagesCount;
+			document.getElementById('page-'+currentPage).className = 'visible';
+		};
+		var goForward = function(){
+			document.getElementById('page-'+currentPage).className = 'not_visible';
+			currentPage = (currentPage+1)%pagesCount;
+			document.getElementById('page-'+currentPage).className = 'visible';
+		};
+		</script>
 	</body>
 </html>
